@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Portfolio Enola Tellier</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--STORIES INVISIBLES-->
+    <div  class="storyprofile" id="profile"><div class="header-story"><span>hktaeron</span><button class="croix croixstory"><img src="./img/croix.png" alt="croix"/></button></div></div>
+    <div  class="storyentiere" id="formations"><div class="header-story header-story-une"><span>Formations</span><button class="croix croixstoryune"><img src="./img/croix.png" alt="croix"/></button></div><button class="prev prevstory" title="formations"><img src="./img/prev.png" alt="prev"/></button><button class="next nextstory" title="formations"><img src="./img/next.png" alt="next"/></button></div>
+    <div class="storyentiere" id="compétences"><div class="header-story header-story-une"><span>Compétences</span><button class="croix croixstoryune"><img src="./img/croix.png" alt="croix"/></button></div><button class="prev prevstory" title="compétences"><img src="./img/prev.png" alt="prev"/><button class="next nextstory" title="compétences"><img src="./img/next.png" alt="next"/></button></div>
+    <div class="storyentiere" id="expériences"><div class="header-story"><span>Expériences</span><button class="croix croixstory"><img src="./img/croix.png" alt="croix"/></button></div><button class="prev prevstory" title="expériences"><img src="./img/prev.png" alt="prev"/></button><button class="next nextstory" title="expériences"><img src="./img/next.png" alt="next"/></button></div>
+    <div class="storyentiere" id="langages"><div class="header-story"><span>Langages</span><button class="croix croixstory"><img src="./img/croix.png" alt="croix"/></button></div><button class="prev prevstory" title="langages"><img src="./img/prev.png" alt="prev"/></button><button class="next nextstory" title="langages"><img src="./img/next.png" alt="next"/></button></div>
+    <div class="storyentiere" id="logiciels"><div class="header-story"><span>Logiciels</span><button class="croix croixstory"><img src="./img/croix.png" alt="croix"/></button></div><button class="prev prevstory" title="logiciels"><img src="./img/prev.png" alt="prev"/></button><button class="next nextstory" title="logiciels"><img src="./img/next.png" alt="next"/></button></div>
+    <div class="storyentiere" id="loisirs"><div class="header-story"><span>Loisirs</span><button class="croix croixstory"><img src="./img/croix.png" alt="croix"/></button></div><button class="prev prevstory" title="loisirs"><img src="./img/prev.png" alt="prev"/></button><button class="next nextstory" title="loisirs"><img src="./img/next.png" alt="next"/></button></div>
+    <div class="storyentiere end"></div>
+
+
+    <header>
+    <div class="header-info">
+        <button class="Paramètre"></button>
+        <span class="tag-header">hktaeron</span>
+        <button class="ajout"></button>
+    </div>
+</header>
+
+<div class="forpc">
+    <nav class="aside-content">
+            <ul>
+                <li><button onclick="window.location.href = './feed.html'" class="aside-info"><img src="./img/home-icon.png" alt="dev-icon" class="img-onglet"><span>Accueil</span></button></li>
+                <li><button onclick="window.location.href = './discover.html'" class="aside-info"><img src="./img/portfolio.png" alt="discover-icon" class="img-onglet"><span>Découvrir</span></button></li>
+                <li><button onclick="window.location.href = './notification.html'" class="aside-info"><img src="./img/heart.png" alt="heart-icon" class="img-onglet"><span>Notifications</span></button></li>
+                <li><button onclick="window.location.href = './contact.html'" class="aside-info"><img src="./img/message.png" alt="message-icon" class="img-onglet"><span>Messages</span></button></li>
+                <li><button onclick="window.location.href = './index.html'" class="aside-info"><div class="profile-icon-petit   active-icon"><a href="index.html"></a><img class="img-onglet moi-petit" src="./img/1652008592685.jpg" alt="moi"></div><span>Profil</span></button></li>
+                <li><button class="aside-info menu"><img src="./img/hamburger.png.png" alt="menu"><span>Plus</span></button></li>
+            </ul>    
+    </nav>
+
+
+    <main>
+
+        
+    <!-- POP UP ( paramètre, posts et ajout)-->
+
+    <div class="popup-post-overlay">
+        <!--Creates the popup content-->
+        <div class="popup-post-content">
+            <!--popup's close button-->
+          <button class="closeajoutcomp croix"><img src="./img/prev.png" alt="retour"/></button><b>Photos</b></div>
+          <div class="header-post"><div class="profile-icon-moyen"><img class="moi-moyen" src="./img/1652008592685.jpg" alt="moi"></div><b>khtaeron</b></div>
+          <div class="post-img">
+            <div class="post-content">
+        
+            <div class="slider-single" id="slider-1">
+                <img class="slider-single-image"  id="slider-img-1" src="https://picsum.photos/id/973/200/300" alt="1" /><button class="prev prev-post" id="1"><img src="./img/prev.png" alt="prev"/></button><button class="next next-post"  id="1"><img src="./img/next.png" alt="next"/></button>
+            </div>
+    
+            <div class="slider-single" id="slider-2">
+                <img class="slider-single-image" id="slider-img-2" src="https://picsum.photos/id/974/200/300" alt="2" /><button class="prev prev-post" id="2"><img src="./img/prev.png" alt="prev"/></button><button class="next next-post"  id="2"><img src="./img/next.png" alt="next"/></button>
+            </div>
+    
+            <div class="slider-single" id="slider-3">
+                <img class="slider-single-image" id="slider-img-3" src="https://picsum.photos/id/975/200/300" alt="3" /><button class="prev prev-post" id="3"><img src="./img/prev.png" alt="prev"/></button><button class="next next-post"  id="3"><img src="./img/next.png" alt="next"/></button>
+            </div>
+    
+            <div class="slider-single" id="slider-4">
+                <img class="slider-single-image" id="slider-img-4" src="https://picsum.photos/id/978/200/300" alt="4" /><button class="prev prev-post" id="4"><img src="./img/prev.png" alt="prev"/></button><button class="next next-post"  id="4"><img src="./img/next.png" alt="next"/></button>
+            </div>
+            <div class="bullet-contain"><div class="bullet" id="bullet-1"></div><div class="bullet" id="bullet-2"></div><div class="bullet" id="bullet-3"></div><div class="bullet" id="bullet-4"></div></div>
+        </div>
+            </div>
+        
+          <div class="icones"><button class='like'><img src="./img/heart.png"></button><button class="share"><img src="./img/share.png"></button></div>
+          <span class="compteur-like"><p class="ppc">Aucun</p></span>
+          <div class="description-post-div">
+          <span class="header-description-post"><b>hktaeron</b></span>
+          <span class="description-post"></span>
+
+        </div>
+      </div>
+
+
+    <div class="popup-ajoutcomp-overlay">
+        <!--Creates the popup content-->
+        <div class="popup-ajoutcomp-content">
+            <!--popup's close button-->
+          <button class="closeajoutcomp croix"><img src="./img/croix.png" alt="croix"/></button></div>
+          <h2 class="h2ajout">Vous souhaitez ajouter des compétences à ce profil ? <br>Alors contactez-moi !</h2>
+          <ul>
+                <li><a href="mailto:enolatellier.school@gmail.com?subject=Contact depuis Portfolio"><img src="./img/mail.png" alt="mail-icon"/>&nbsp; &nbsp; enolatellier.school@gmail.com</li>
+                <li><a href="https://www.linkedin.com/in/enola-tellier/"><img src="./img/linkedin.png" alt="linkedin-icon"/>&nbsp; &nbsp; Enola Tellier</a></li>
+                <li><a href="https://www.instagram.com/hktaeron/"><img src="./img/instagram.png" alt="insta-icon"/>&nbsp; &nbsp; @hktaeron</a></li>
+          </ul>
+         
+          
+      </div>
+    
+    <div class="popup-parametre-overlay">
+        <!--Creates the popup content-->
+        <div class="popup-parametre-content">
+            <!--popup's close button-->
+          <button class="closeajoutcomp croix croixparametre"><img src="./img/croix.png" alt="croix"/></button></div>
+          <p><b>Les paramètres ne sont pas encore accessibles !</b> </br> Onglet actuellement en travaux.<br><b> Revenez plus tard !</b></p>   
+      </div>
+    
+
+
+
+    <!--Début du main visible-->
+
+    <div class="content">
+
+
+    <!-- Description-->
+    <div class="description">
+        <div class="description-intro">
+        <div class="profile-icon">
+            <img class="moi" src="./img/1652008592685.jpg" alt="moi">
+        </div>
+        <div class="head-description">
+            <span class="pseudo">hktaeron</span><br>
+            <button class="ajoutcomp">Ajouter compétences</button>
+        </div>
+    </div>
+    <div class="counter-pc">
+        <div class="counter-info-pc"><p><b>12</b> &nbsp;projets</p></div>
+        <div class="counter-info-pc"><p><b>5</b> &nbsp;langages</p></div>
+        <div class="counter-info-pc"><p><b>4</b> &nbsp;logiciels</p></div>
+    </div>
+
+        <div class="text-descritpion">
+            <p>&#127803 Enola Tellier &#129418<br>Etudiante | BUT MMI | 2° année &#128187<br>Passionnée du numérique<br>Future développeuse web<br>CV: <a href="cv-tellier-enola">cv-Enola-Tellier</a></p>
+        </div>
+    
+    </div>
+
+    <!-- Stories à la une, nombre et gestion des onglets-->
+
+        <div class="stories-une">
+            <div class="story-une-tout"><div class="story-une"><img class="story-une-img Formations" src="./img/Formations.png" alt="formations" title="formations"></div><div class="label-story">Formations</div></div>
+            <div class="story-une-tout"><div class="story-une"><img class="story-une-img Compétences" src="./img/Compétences (1).png" alt="compétences" title="compétences"></div><div class="label-story mobile">Compéten...</div><div class="label-story pc">Compétences</div></div>
+            <div class="story-une-tout"><div class="story-une"><img class="story-une-img Expériences" src="./img/Expériences.png" alt="Expériences" title="expériences"></div><div class="label-story mobile">Expérien...</div><div class="label-story pc">Expériences</div></div>
+            <div class="story-une-tout"><div class="story-une"><img class="story-une-img Langages" src="./img/Objectifs (5).png" alt="Langages" title="langages"></div><div class="label-story">Langages</div></div>
+            <div class="story-une-tout"><div class="story-une"><img class="story-une-img Logiciels" src="./img/Logiciels.png" alt="logiciels" title="logiciels"></div><div class="label-story">Logiciels</div></div>
+            <div class="story-une-tout"><div class="story-une"><img class="story-une-img Loisirs" src="./img/Loisirs.png" alt="Loisirs" title="loisirs"></div><div class="label-story">Loisirs</div></div>
+        </div>
+
+        
+        
+        <div class="counter">
+            <div class="counter-info"><p><b>12</b><br>projets</p></div>
+            <div class="counter-info"><p><b>5</b><br>langages</p></div>
+            <div class="counter-info"><p><b>4</b><br>logiciels</p></div>
+        </div>
+        <div class="onglet">
+            <button class="onglet-info dev active"><img src="./img/dev-blue.png" alt="dev-icon" class="img-onglet"><span>DEVELOPPEMENT WEB</span></button>
+            <button class="onglet-info ux"><img src="./img/ux-icon.png" alt="ux-icon" class="img-onglet"><span>UX/UI DESIGN</span></button>
+            <button class="onglet-info autres"><img src="./img/web-icon.png" alt="web-icon" class="img-onglet"><span>DIVERS</span></button>
+        </div>
+
+        <!-- Posts-->
+
+        <div class="gallery" id="devOnglet">
+                                            <div class="post" id ="testformulaire"><img class="post" src="./img/testformulaire1.png" alt="post-insta"></div>
+                                            <div class="post" id="portfolio"><img class="post" src="./img/portfolio1.png" alt="post-insta"></div>
+                                            <div class="post" id="dashboard"><img class="post" src="./img/dashboard1.png" alt="post-insta"></div>
+                                            <div class="post" id="Neopolis"><img class="post" src="./img/Neopolis1.png" alt="post-insta"></div>
+                                            <div class="post" id="UGW"><img class="post" src="./img/UGW1.png" alt="post-insta"></div>  
+                                            
+        </div>
+        <div class="gallery" id="uxOnglet"><div class="post"><img class="post" src="./img/uxportfolio.png" alt="post-insta"></div>
+                                            <div class="post"><img class="post" src="./img/ux colonie.png" alt="post-insta" alt="post-insta"></div>
+                                            <div class="post"><img class="post" src="./img/uxjeu.png" alt="post-insta" alt="post-insta"></div>
+        </div>
+        
+        
+        <div class="gallery" id="autresOnglet"><div class="post"><img class="post" src="./img/pexels-valeria-boltneva-1805164 (1).jpg" alt="post-insta"></div>
+                                            <div class="post"><img class="post" src="./img/pexels-valeria-boltneva-1805164 (1).jpg" alt="post-insta"></div>
+                                            <div class="post"><img class="post" src="./img/pexels-valeria-boltneva-1805164 (1).jpg" alt="post-insta"></div>
+                                            <div class="post"><img class="post" src="./img/pexels-valeria-boltneva-1805164 (1).jpg" alt="post-insta"></div>
+                                            <div class="post"><img class="post" src="./img/pexels-valeria-boltneva-1805164 (1).jpg" alt="post-insta"></div>
+                                            <div class="post"><img class="post" src="./img/pexels-valeria-boltneva-1805164 (1).jpg" alt="post-insta"></div>
+                                            <div class="post"><img class="post" src="./img/pexels-valeria-boltneva-1805164 (1).jpg" alt="post-insta"></div>
+        </div>
+
+        
+ 
+    </div>
+    
+</div>
+</main>
+
+
+       <!--Footer-->
+<footer>
+    <div class="footer-content">
+        <button onclick="window.location.href = './feed.html'" class="footer-info"><img src="./img/home-icon.png" alt="dev-icon" class="img-onglet"></button>
+        <button onclick="window.location.href = './discover.html'" class="footer-info"><img src="./img/portfolio.png" alt="loupe-icon" class="img-onglet"></button>
+        <button onclick="window.location.href = './notification.html'" class="footer-info"><img src="./img/heart.png" alt="heart-icon" class="img-onglet"></button>
+        <button onclick="window.location.href = './contact.html'" class="footer-info"><img src="./img/message.png" alt="message-icon" class="img-onglet"></button>
+        <button onclick="window.location.href = './index.html'" class="footer-info"><div class="profile-icon-petit   active-icon"><a href="index.html"></a><img class="img-onglet moi-petit" src="./img/1652008592685.jpg" alt="moi"></div></button>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script> <!--chargement de la bibliothèque js en allant sur jquery core-->
+<script src="code.js"></script>
+
+</body>
+</html>
