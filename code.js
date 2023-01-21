@@ -166,23 +166,23 @@ function quitter(){
 
 
   if($(this).is('#testformulaire')){  
-    $('.description-post').html("Découvrez ce projet d'intégration réalisé dans le cadre d'un exercice personnel ! </br> <a href='https://github.com/KhTaeron/exerciceform'> Lien vers le GitHub </a>");
+    $('.description-post').html("Découvrez ce projet d'intégration réalisé dans le cadre d'un exercice personnel ! </br> <a href='https://github.com/KhTaeron/exerciceform'> Lien vers le GitHub </a></br></br>Afin de concevoir ce site, je me suis basée sur un webdesign fourni sur Figma.<br>J'ai rencontré quelques difficultés, notamment sur le positionnement. En effet, les positionnements ne sont pas parfaits et méritent d'être corrigés: j'aurais du utiliser les valeurs de viewport plutôt que le pourcentage afin d'optimiser la responsivité.");
   };
 
   if($(this).is('#portfolio')){ 
-    $('.description-post').html('Découvrez dès maintenant mon premier portfolio et le parcours de création ! &#10024; </br> <a href="">Lien vers le portfolio</a>');  
+    $('.description-post').html('Découvrez dès maintenant mon premier portfolio et le parcours de création ! &#10024; </br> <a href="https://portfolioenolatellier.000webhostapp.com/">Lien vers le portfolio</a>');  
   };
 
   if($(this).is('#dashboard')){  
-    $('.description-post').html('Découvrez le dashboard reprenant les données des indicateurs du COVID-19 dans le département du Nord. &#128202; </br></br> Travail réalisé en projet tutauré.'); 
+    $('.description-post').html('Découvrez le dashboard reprenant les données des indicateurs du COVID-19 dans le département du Nord. &#128202; </br> Le travail était orienté sur le traitement de données et non le design.</br></br> Travail réalisé en projet tutauré. </br> <a href="https://tellieno.tpweb.univ-rouen.fr/SAE303/vaccin.php"> Lien vers le site web uniquement université </a></br><a href="https://github.com/KhTaeron/sae303">Lien vers le GitHub</a></br><a href="./dashboardtest.html">Lien vers le code source</a>'); 
   };
 
   if($(this).is('#Neopolis')){
-    $('.description-post').html("Découvrez ce projet et l'évènement de Neopolis à travers cette brève présentation.<br> Le site a été développé avec le CMS WordPress </br></br>Travail réalisé en projet tutauré."); 
+    $('.description-post').html("Découvrez ce projet et l'évènement de Neopolis à travers cette brève présentation.<br> Le site a été développé avec le CMS WordPress </br></br>Travail réalisé en projet tutauré.</br><a href='https://prezi.com/view/v1CxbtV4VWRifpXUnl8W/'>Lien vers la présentation du projet</a><br></br>Vous souhaitez voir un peu plus de cette interface ? Suivez les liens suivants ! &#128680; Attention, ce n'est que le code source donc les plugins ne sont pas fonctionnels &#128680;</br></br><a href='./neopolistest2.html'>Lien vers l'accueil</a></br><a href='./neopolistest.html'>Lien vers une page de présentation</a>"); 
   };
 
   if($(this).is('#UGW')){   
-    $('.description-post').html("Découvrez ce site web représentant le projet fictif UGW.<br> Le site a été développé avec le CMS WordPress (premier essai).");
+    $('.description-post').html("Découvrez ce site web représentant le projet fictif UGW.<br> Le site a été développé avec le CMS WordPress (premier essai).<br></br>Vous souhaitez voir un peu plus de cette interface ? Suivez les liens suivants ! &#128680; Attention, ce n'est que le code source donc les plugins ne sont pas fonctionnels ! &#128680;</br></br><a href='./ugwtest.html'>Lien vers l'accueil</a></br><a href='./ugwtest2.html'>Lien vers une page de présentation</a>");
   };
 });
 

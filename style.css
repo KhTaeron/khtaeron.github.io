@@ -1007,7 +1007,7 @@ overflow: hidden;
       }
       .bullet-contain{
         margin-left: 19vw;
-        margin-top: 30vh;
+        margin-top: 32vh;
         width: 10vw;
         display: flex;
         justify-content:space-between;
@@ -1039,7 +1039,7 @@ overflow: hidden;
       .prev-post{
         position: relative;
         top: 50%;
-        margin-top: -34vw;
+        margin-top: -63vh;
         width: 2.43vw;
         height: 2.43vw;
         
