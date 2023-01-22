@@ -228,6 +228,9 @@ $('.like').on("click", function() {
 
 //CONTACT
 
+element = $('.conversation');
+element.scrollTop = element.scrollHeight;
+
 $('#reponseoui').on("click", function() {
   $('.reponse1').hide();
   $('.messagereponse1').text('Oui');
