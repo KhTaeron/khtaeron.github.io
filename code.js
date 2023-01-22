@@ -80,6 +80,9 @@ $('.prev').on('click', function(){
   $('.storyentiere').hide();
   var thisstory = $(this).attr('title');
   $('#' + thisstory).prev().fadeIn();
+  if($('#' + thisstory).prev().hasClass('start')){
+    closestory();
+  }
 });
 
 $('.next').on('click', function(){

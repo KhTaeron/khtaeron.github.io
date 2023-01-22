@@ -210,6 +210,7 @@ html, body {
     top:0;
     z-index: 1;
     width: 100vw;
+    overflow: hidden;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -275,6 +276,7 @@ html, body {
 .storymode{
     overflow-y: hidden;
 }
+
 
 #formations{
     background-image: url(./img/formation-story.png);
@@ -679,6 +681,7 @@ html, body {
 
     /*ARCHITECTURE PAGE*/
     .forpc{
+        font-size: 1.75vh;
         display: grid;
         grid-template-areas:'menu main';
         gap: 10px;
@@ -793,14 +796,14 @@ html, body {
 
 
     .moi{
-        width: 150px;
-        height: 150px;
+        width: 11.7vw;
+        height: 11.7vw;
     }
     
     .profile-icon{
 
-        width: 153px;
-        height: 153px;
+        width: 12vw;
+        height: 12vw;
         margin-left: 2.4vw;
       }
     
@@ -814,32 +817,38 @@ html, body {
     }
 
     .text-descritpion{
-        z-index: 1; position: relative;
-        margin-top: -8.5em;
-        width: 48vw;
-        margin-left: 18.8vw;
+        z-index: 1; 
+        position:inherit;
+        margin-top: -15vh;
+        width: auto;
+        margin-left: 40%;
+        
     }
     .head-description{
+        
         display: flex;
-        margin-left: 4.1vw;
+        margin-left: 3rem;
     }
     
+    .head-description span{
+        font-size: 2.5vh;
+    }
 
     .ajoutcomp{
         margin-top: 0;
         margin-left: 1.25vw;
         padding: 0.5vh 1.2vw;
-        width: 12vw ;
-        height: 4vh;  
-        font-size: 14px;
+        width: 20vw ;
+        height: 3.5vh;  
     }
 
     .counter-pc{
         z-index: 1; 
-        margin-top: -8.5em;
-        width: 350px;
-        margin-left: 18.8vw;
-        position: relative;
+        margin-top: -16vh;
+        
+        width: 27.3vw;
+        margin-left: 40%;
+        position: static;
         display: flex;
         justify-content: space-between;
         margin-bottom: 15vh;
@@ -857,32 +866,33 @@ html, body {
     }
 
     .stories-une{
-        margin-top: 8vh;
-        margin-bottom: 7vh ;
+        margin-top: 3%;
+        margin-bottom: 3% ;
         width: 73vw;
         height: 15.625vh;
     }
     
     .story-une-img{
-        width: 77px;
-        height: 77px;
+        width: 6vw;
+        height: 6vw;
     }
 
     .story-une{
-        width: 83px;
-        max-height: 83px;
+        width: 6.5vw;
+        max-height: 6.5vw;
     }
 
     
     .story-une-tout{
-        min-width: 9.7vw;
+        min-width: 9px;
         max-width: 9.7vw;           
     }
     
     .label-story{
-        
+        text-align: center;
         width: 10vw;
         height: 5vh;
+        font-size: 1.75vh;
         overflow-x: hidden;
         margin-top: 1vh;
     }
@@ -896,6 +906,7 @@ html, body {
     }
 
     .onglet{
+        
     
         width: 73vw;
         border-top: solid 1px #3d4240;
@@ -903,6 +914,7 @@ html, body {
     }
 
     .onglet-info{
+        
         border: none;
         border-top: solid 2px transparent;
         max-width: 16vw;
@@ -914,9 +926,10 @@ html, body {
     }
 
     .onglet-info span{
+
         margin-left: 0.5vw;
         display: block;
-        font-size: 12px;
+        font-size: 1.5vh;
         opacity: 0.5;
     }
     
@@ -1114,12 +1127,15 @@ overflow: hidden;
     /* GESTION DES STORIES */
 
 .storyprofile{
-    overflow-y:hidden;
+    overflow:hidden;
 }
+
 
 .croix{
     margin-right: 85%;
     margin-top: 0vh;
+    
+
 }
 
 
@@ -1149,13 +1165,15 @@ overflow: hidden;
     margin-left: 2.8vw;
 }
 
-.croixstory{
-    margin-left: 19vw;
+.croixstory, .croixstoryune{
+    margin-right:32.5%;
 }
 
-.croixstoryune{
-    margin-left: 18vw;
+.croixstory img, .croixstoryune img{
+    height: 4vh;
+    width: auto;
 }
+
 
 .header-story-une span{
     visibility: hidden;
@@ -1171,12 +1189,15 @@ overflow: hidden;
 
 .prevstory{
     position: absolute;
-    margin-left: 33vw;
+    margin-left: 33.3vw;
+    margin-top: 0;
+    height: 100%;
 }
 .nextstory{
-    position: relative;
-    margin-left: 65vw;
-    margin-right: 33vw;
+    margin-left: auto;
+    margin-right: 33.3vw;
+    margin-top: 0;
+    height: 100%;
 }
 }
 
