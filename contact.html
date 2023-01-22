@@ -13,13 +13,49 @@
 <body>
     <header>
         <div class="header-info">
-            <button class="Paramètre"></button>
+            <button onclick="window.location.href = './index.html'" class="retour"></button>
             <span class="tag-header">hktaeron</span>
             <button class="write"></button>
         </div>
     </header>
 
+    <div class="forpc">
+        <nav class="aside-content">
+                <ul>
+                    <li><button onclick="window.location.href = './feed.html'" class="aside-info"><img src="./img/home-icon.png" alt="dev-icon" class="img-onglet"><span>Accueil</span></button></li>
+                    <li><button onclick="window.location.href = './discover.html'" class="aside-info"><img src="./img/portfolio.png" alt="discover-icon" class="img-onglet"><span>Découvrir</span></button></li>
+                    <li><button onclick="window.location.href = './notification.html'" class="aside-info"><img src="./img/heart.png" alt="heart-icon" class="img-onglet"><span>Notifications</span></button></li>
+                    <li><button onclick="window.location.href = './contact.html'" class="aside-info"><img src="./img/message.png" alt="message-icon" class="img-onglet"><span>Messages</span></button></li>
+                    <li><button onclick="window.location.href = './index.html'" class="aside-info"><div class="profile-icon-petit   active-icon"><a href="index.html"></a><img class="img-onglet moi-petit" src="./img/1652008592685.jpg" alt="moi"></div><span>Profil</span></button></li>
+                    <li><button class="aside-info menu"><img src="./img/hamburger.png.png" alt="menu"><span>Plus</span></button></li>
+                </ul>    
+        </nav>
+    <div class="popup-ajoutcomp-overlay">
+        <!--Creates the popup content-->
+        <div class="popup-ajoutcomp-content">
+            <!--popup's close button-->
+          <button class="closeajoutcomp croix"><img src="./img/croix.png" alt="croix"/></button></div>
+          <h2 class="h2ajout">Vous souhaitez m'écrire ? <br>Alors contactez-moi !</h2>
+          <ul>
+                <li><a href="mailto:enolatellier.school@gmail.com?subject=Contact depuis Portfolio"><img src="./img/mail.png" alt="mail-icon"/>&nbsp; &nbsp; enolatellier.school@gmail.com</li>
+                <li><a href="https://www.linkedin.com/in/enola-tellier/"><img src="./img/linkedin.png" alt="linkedin-icon"/>&nbsp; &nbsp; Enola Tellier</a></li>
+                <li><a href="https://www.instagram.com/hktaeron/"><img src="./img/instagram.png" alt="insta-icon"/>&nbsp; &nbsp; @hktaeron</a></li>
+          </ul>
+      </div>
 
+      <main>
+        <div class="conversation">
+            <div class="message"><div class="profile-icon-petit "><img class="moi-petit" src="./img/1652008592685.jpg" alt="moi"></div><span>Vous souhaitez me contacter ?</span></div>
+            <div class="reponse reponse1"><button id="reponseoui">Oui</button><button id="reponsenon">Non</button></div>
+            <div class="messagereponse messagereponse1"></div>
+            <div class="message message2"><div class="profile-icon-petit "><img class="moi-petit" src="./img/1652008592685.jpg" alt="moi"></div><div class="spanmessage2"></div></div>
+            <div class="reponse reponse2"><button id="reponsemail">Mail</button><button id="reponselinkedin">LinkedIn</button><button id="reponsemobile">Téléphone</button></div>
+            <div class="messagereponse messagereponse2"></div>
+            <div class="message message3"><div class="profile-icon-petit "><img class="moi-petit" src="./img/1652008592685.jpg" alt="moi"></div><div class="spanmessage3"></div></div>
+                 
+        </div>
+      </main>
+    </div>
 <footer>
     <div class="footer-content">
         <button onclick="window.location.href = './feed.html'" class="footer-info"><img src="./img/home-icon.png" alt="dev-icon" class="img-onglet"></button>

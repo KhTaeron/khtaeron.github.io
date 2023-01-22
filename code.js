@@ -80,9 +80,6 @@ $('.prev').on('click', function(){
   $('.storyentiere').hide();
   var thisstory = $(this).attr('title');
   $('#' + thisstory).prev().fadeIn();
-  if($('#' + thisstory).prev().hasClass('start')){
-    closestory();
-  }
 });
 
 $('.next').on('click', function(){
@@ -177,15 +174,15 @@ function quitter(){
   };
 
   if($(this).is('#dashboard')){  
-    $('.description-post').html('Découvrez le dashboard reprenant les données des indicateurs du COVID-19 dans le département du Nord. &#128202; </br> Le travail était orienté sur le traitement de données et non le design.</br></br> Travail réalisé en projet tutauré. </br> <a href="https://tellieno.tpweb.univ-rouen.fr/SAE303/vaccin.php"> Lien vers le site web uniquement université </a></br><a href="https://github.com/KhTaeron/sae303">Lien vers le GitHub</a></br><a href="./dashboardtest.html">Lien vers le code source</a>'); 
+    $('.description-post').html('Découvrez le dashboard reprenant les données des indicateurs du COVID-19 dans le département du Nord. &#128202; </br> Le travail était orienté sur le traitement de données et non le design. Site non responsive ! </br></br> Travail réalisé en projet tutauré. </br> <a href="https://tellieno.tpweb.univ-rouen.fr/SAE303/vaccin.php"> Lien vers le site web uniquement université </a></br><a href="https://github.com/KhTaeron/sae303">Lien vers le GitHub</a></br><a href="./dashboardtest.html">Lien vers le code source</a>'); 
   };
 
   if($(this).is('#Neopolis')){
-    $('.description-post').html("Découvrez ce projet et l'évènement de Neopolis à travers cette brève présentation.<br> Le site a été développé avec le CMS WordPress </br></br>Travail réalisé en projet tutauré.</br><a href='https://prezi.com/view/v1CxbtV4VWRifpXUnl8W/'>Lien vers la présentation du projet</a><br></br>Vous souhaitez voir un peu plus de cette interface ? Suivez les liens suivants ! &#128680; Attention, ce n'est que le code source donc les plugins ne sont pas fonctionnels &#128680;</br></br><a href='./neopolistest2.html'>Lien vers l'accueil</a></br><a href='./neopolistest.html'>Lien vers une page de présentation</a>"); 
+    $('.description-post').html("Découvrez ce projet et l'évènement de Neopolis à travers cette brève présentation.<br> Le site a été développé avec le CMS WordPress </br></br>Travail réalisé en projet tutauré.</br><a href='https://prezi.com/view/v1CxbtV4VWRifpXUnl8W/'>Lien vers la présentation du projet</a><br></br>Vous souhaitez voir un peu plus de cette interface ? Suivez les liens suivants !</br> &#128680; Attention, ce n'est que le code source donc les plugins ne sont pas fonctionnels &#128680;</br></br><a href='./neopolistest2.html'>Lien vers l'accueil</a></br><a href='./neopolistest.html'>Lien vers une page de présentation</a>"); 
   };
 
   if($(this).is('#UGW')){   
-    $('.description-post').html("Découvrez ce site web représentant le projet fictif UGW.<br> Le site a été développé avec le CMS WordPress (premier essai).<br></br>Vous souhaitez voir un peu plus de cette interface ? Suivez les liens suivants ! &#128680; Attention, ce n'est que le code source donc les plugins ne sont pas fonctionnels ! &#128680;</br></br><a href='./ugwtest.html'>Lien vers l'accueil</a></br><a href='./ugwtest2.html'>Lien vers une page de présentation</a>");
+    $('.description-post').html("Découvrez ce site web représentant le projet fictif UGW.<br> Le site a été développé avec le CMS WordPress (premier essai).<br></br>Vous souhaitez voir un peu plus de cette interface ? Suivez les liens suivants ! &#128680; Attention, ce n'est que le code source donc les plugins ne sont pas fonctionnels ! &#128680;</br></br><a href='./img/ugwtest.html'>Lien vers l'accueil</a></br><a href='./ugwtest2.html'>Lien vers une page de présentation</a>");
   };
 });
 
@@ -221,10 +218,53 @@ $('.like').on("click", function() {
     $('.compteur-like').css('display','block');
 
   } });
-  if ($(window).width() > 960) {
+
+
+
+
+
+//CONTACT
+
+$('#reponseoui').on("click", function() {
+  $('.reponse1').hide();
+  $('.messagereponse1').text('Oui');
+  $('.messagereponse1,.message2,.reponse2').addClass('reponsevisible');
+  $('.messagereponse1').css('margin-bottom','3vh');
+  $('.spanmessage2').html('Super ! Ravie de vous rencontrer.&#128516;</br> Comment souhaitez-vous me contacter ?');
+  $('#reponsemail').on("click", function() {
+    $('.reponse2').hide();
+    $('.messagereponse2').text('Mail');
+    $('.messagereponse2,.message3').addClass('reponsevisible');
+    $('.spanmessage3').html('Efficace ! &#128521;</br></br> Vous pouvez me contacter avec cette adresse : enolatellier.school@gmail.com </br></br> A très vite ! &#128516;');
+  });
+  $('#reponselinkedin').on("click", function() {
+    $('.reponse2').hide();
+    $('.messagereponse2').text('LinkedIn');
+    if ($(window).width() <= 960) {
+      $('.messagereponse2').css('padding','5vw')
+    };
     
-  };
+    $('.messagereponse2,.message3').addClass('reponsevisible');
+    $('.spanmessage3').html("Original ! &#128521;</br></br> Vous pouvez me contactez sur ce compte: Enola Tellier</br>(J'ai la même tête qu'ici &#128513;)</br></br> A très vite ! &#128516;");
+  });
+  $('#reponsemobile').on("click", function() {
+    $('.reponse2').hide();
+    $('.messagereponse2').text('Téléphone');
+    if ($(window).width() <= 960){
+      $('.messagereponse2').css('padding','5vw')
+    }
+    
+    $('.messagereponse2,.message3').addClass('reponsevisible');
+    $('.spanmessage3').html("Très bien ! &#128521;</br></br> Vous pouvez me contactez avec ce numéro: 07 82 94 50 13</br>(N'hésitez pas à me laisser un message !)</br></br> A très vite ! &#128516;");
+  });
+  
+});
 
-
-
-
+$('#reponsenon').on("click", function() {
+  $('.reponse1').hide();
+  $('.messagereponse1').text('Non');
+  $('.messagereponse1,.message2').addClass('reponsevisible');
+  $('.message2').css('margin-bottom','10vh');
+  $('.spanmessage2').html('Oh quel dommage... &#128532; A très vite !');
+  
+});
