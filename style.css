@@ -815,7 +815,7 @@ html, body {
 
     .text-descritpion{
         z-index: 1; position: relative;
-        margin-top: -15vh;
+        margin-top: -8.5em;
         width: 48vw;
         margin-left: 18.8vw;
     }
@@ -836,7 +836,7 @@ html, body {
 
     .counter-pc{
         z-index: 1; 
-        margin-top: -15vh;
+        margin-top: -8.5em;
         width: 350px;
         margin-left: 18.8vw;
         position: relative;
