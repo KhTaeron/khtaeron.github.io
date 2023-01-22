@@ -1034,6 +1034,8 @@ overflow: hidden;
 
       .bullet{
         box-shadow: rgba(61, 61, 63, 0.2) 2px 2px 2px 2px;
+        width: 1.25vh;
+        height: 1.25vh;
       }
     
       .prev, .next{
@@ -1052,7 +1054,7 @@ overflow: hidden;
       .prev-post{
         position: relative;
         top: 50%;
-        margin-top: -63vh;
+        margin-top: -50vh;
         width: 2.43vw;
         height: 2.43vw;
         
@@ -1166,7 +1168,7 @@ overflow: hidden;
 }
 
 .croixstory, .croixstoryune{
-    margin-right:32.5%;
+    margin-right:33%;
 }
 
 .croixstory img, .croixstoryune img{
