@@ -231,6 +231,9 @@ $('.like').on("click", function() {
 element = $('.conversation');
 element.scrollTop = element.scrollHeight;
 
+if ($(window).width() <= 960){
+  $('.message span').html("Vous souhaitez me contacter ? </br>(Sur mobile, n'hésitez pas à scroller)")
+};
 $('#reponseoui').on("click", function() {
   $('.reponse1').hide();
   $('.messagereponse1').text('Oui');
@@ -258,7 +261,7 @@ $('#reponseoui').on("click", function() {
     $('.messagereponse2').text('Téléphone');
     if ($(window).width() <= 960){
       $('.messagereponse2').css('padding','5vw')
-    }
+    };
     
     $('.messagereponse2,.message3').addClass('reponsevisible');
     $('.spanmessage3').html("Très bien ! &#128521;</br></br> Vous pouvez me contactez avec ce numéro: 07 82 94 50 13</br>(N'hésitez pas à me laisser un message !)</br></br> A très vite ! &#128516;");
@@ -270,7 +273,7 @@ $('#reponsenon').on("click", function() {
   $('.reponse1').hide();
   $('.messagereponse1').text('Non');
   $('.messagereponse1,.message2').addClass('reponsevisible');
-  $('.message2').css('margin-bottom','10vh');
+  $('.message2').css('margin-bottom','11vh');
   $('.spanmessage2').html('Oh quel dommage... &#128532; A très vite !');
   
 });

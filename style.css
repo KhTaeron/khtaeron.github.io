@@ -315,7 +315,7 @@ html, body {
 .stories-une{
     overflow-x: scroll;
     
-    width: 120vw;
+    width: 140vw;
     display: flex;
     justify-content: space-between;
     margin-bottom: 3vh;
