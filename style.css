@@ -314,8 +314,8 @@ html, body {
 
 .stories-une{
     overflow-x: scroll;
-    
-    width: 140vw;
+    position: relative;
+    width: auto;
     display: flex;
     justify-content: space-between;
     margin-bottom: 3vh;
@@ -795,6 +795,17 @@ html, body {
     display: flex;
 }
 
+/*NOTIFICATIONS*/
+
+.header-notif{
+    display: flex;
+    justify-content: start;
+}
+
+.header-notif span{
+    margin-left: 2vw;
+    font-size: 1.9vh;
+}
 
 @media screen and (orientation: landscape){
 
