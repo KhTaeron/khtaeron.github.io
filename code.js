@@ -2,6 +2,8 @@ $(document).ready(function(){
 
 $('.gallery').hide();
 
+$('.activeonglet').css({'font-weight':'bolder',"background-color":"#25262560","border-radius":"30px"});
+
 $('.footer-info').on('click', function(){
 }); 
 $( '.onglet-info' ).on( 'click', function () {
@@ -106,6 +108,14 @@ $(".Paramètre, .menu").on("click", function() {
 
 });
 
+
+if ($(window).width() <= 960){
+
+$(".notif").on("click", function() {
+  $(".notifications-main").addClass("opened");
+  $(".notif-cc").css('display','flex');
+});
+}
 
 // GESTION DES POSTS ET CAROUSSEL
 $('.post').on("click", function() {
@@ -277,3 +287,28 @@ $('#reponsenon').on("click", function() {
   $('.spanmessage2').html('Oh quel dommage... &#128532; A très vite !');
   
 });
+
+if ($(window).width() > 960){
+
+$('.notif').on("click", function(){
+
+  if($('.notif').hasClass('opened')){
+    $('.notifications-main, .notif').removeClass('opened');
+    $('.aside-content').removeClass('cliqué');
+    $(".notif-cc").css('display','none');
+    $(".img-heart").attr('src','./img/heart.png');
+    $('.activeonglet').css('background-color','#25262560');
+  }
+
+  else{
+    $('.notifications-main, .notif').addClass('opened');
+    $('.aside-content').addClass('cliqué');
+    $(".notif-cc").css('display','flex');
+    $(".img-heart").attr('src','./img/heart-fill.png');
+    $('.activeonglet').css('background-color','transparent');
+  }
+  
+
+});
+
+};

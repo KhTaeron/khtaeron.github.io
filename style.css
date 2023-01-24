@@ -155,7 +155,7 @@ html, body {
   left: 10vw;
   padding-bottom: 4vh;
 }
-.popup-ajoutcomp-overlay.opened, .popup-parametre-overlay.opened, .popup-post-overlay.opened, .popup-ajoutcomp-content.opened, .popup-parametre-content.opened, .popup-post-content.opened{
+.popup-ajoutcomp-overlay.opened, .popup-parametre-overlay.opened, .popup-post-overlay.opened, .popup-ajoutcomp-content.opened, .popup-parametre-content.opened, .popup-post-content.opened, .notifications-main.opened{
     /*displays pop-up when "active" class is present*/
     visibility: visible;
   }
@@ -462,6 +462,7 @@ html, body {
   height: 100vh;
   top: 0%;
   left: 0;
+  z-index: 99;
 }
 
   .popup-post-content {
@@ -807,6 +808,82 @@ html, body {
     font-size: 1.9vh;
 }
 
+.notifications-main{
+    height: 100vh;
+    width: 100vw;
+    visibility:hidden ;
+    z-index: 99;
+    color: #dfd7d7;
+      position: absolute;
+      background: #121212;
+
+      text-align: center;
+    
+}
+
+.notifcontent{
+    overflow: hidden;
+    margin-top: 5.2vh;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.imgnotif{
+   margin-left: 1vw;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+}
+
+
+  .profilenotif{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    margin-left: 1.1vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.notif-cc{
+
+    display: none;
+    align-items: center;
+    justify-content: start;
+    padding: 8px 16px;
+    width: 100vw;
+    
+    height: auto;
+    border-bottom:solid 1px #3d4240;
+}
+
+.notif-cc span{
+    margin-left: 3.5vw;
+    text-align: start;
+    padding: 6px;
+    margin-right: 1vw;
+    font-size: 1.75vh;
+}
+
+.notif-cc span a{
+    color: #D9E9FF;
+    text-decoration: none;
+}
+
+.buttonpost{
+    margin-left: 15vw;
+    background-image: url('./img/testformulaire1.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
 @media screen and (orientation: landscape){
 
     /*ARCHITECTURE PAGE*/
@@ -1410,6 +1487,81 @@ margin-bottom: 3vh;
 
 
 }
+
+/*NOTIFICATIONS*/
+
+.header-notif{
+    width: 20vw;
+}
+.retour{
+    display: none;
+}
+.notifcontent{
+    margin: 0%;
+   
+    width: 15vw;
+
+}
+
+.notif.cliqué{
+    display: flex;
+}
+.aside-content.cliqué,.aside-content.cliqué .aside-info,.aside-content.cliqué ul {
+    width: 2vw;
+}
+
+.aside-content.cliqué .aside-info span{
+    display: none;
+}
+
+.aside-content.cliqué .aside-info:hover{
+    background-color: transparent;
+}
+
+
+
+.notifications-main{
+    box-shadow: rgba(255, 255, 255, 0.907) 0px 0px 20px -20px;
+border-right: 0.5px solid #3d4240;
+    margin-left: 4.5vw;
+    width: 20vw;
+
+}
+
+.notifcontent{
+    margin-top: 5vh;
+    width: 20vw;
+
+}
+
+.imgnotif{
+   margin-left: 0;
+    width: 3.4vw;
+    height: 3.4vw;
+    border-radius: 50%;
+}
+
+
+  .profilenotif{
+    width: 3.4vw;
+    height: 3.4vw;
+    margin-left: 1vw;
+}
+
+.notif-cc{
+    padding: 0.6vw;
+    width: 20vw;
+}
+
+.notif-cc span{
+    margin-left: 0.5vw;
+
+    padding: 0.4vw;
+    margin-right: 0.5vw;
+    font-size: 1.75vh;
+}
+
+
 
 }
 
