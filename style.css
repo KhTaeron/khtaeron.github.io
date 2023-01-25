@@ -911,6 +911,7 @@ html, body {
     height: 400vh;
     width: 100vw;
     margin-bottom: 2vh;
+    padding-bottom: 3vh;
 
 }
 
@@ -955,6 +956,22 @@ html, body {
     margin-top: 70vh;
     margin-bottom: 2vh;
   }
+
+  /*DECOUVRIR*/
+
+.header-discover{
+    justify-content: center;
+    font-size: 1.9vh;
+}
+
+.discover-gallery{
+    margin-top: 5.2vh;
+    display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0.476923vw;
+ margin-bottom: 7.8vh;
+   
+}
 
 
 @media screen and (orientation: landscape){
@@ -1337,7 +1354,7 @@ overflow: hidden;
       .prev-post{
         position: relative;
         top: 50%;
-        margin-top: -50vh;
+        margin-top: -62vh;
         width: 2.43vw;
         height: 2.43vw;
         
@@ -1657,10 +1674,11 @@ border-right: 0.5px solid #3d4240;
     height: auto;
     width: 82.8vw;
     margin-bottom: 2vh;
+    
 
 }
 
-.slider-single-image{
+.slider-feed .slider-single-image{
     margin-bottom: 0;
     margin-top: 5.2vh;
     width: 45vw;
@@ -1681,9 +1699,7 @@ border-right: 0.5px solid #3d4240;
 
 }
 
-.icone-feed .share{
-    margin-left: 1.5vw;
-}
+
 
 .icones-feed{
     position: relative;
@@ -1738,7 +1754,7 @@ border-right: 0.5px solid #3d4240;
   }
 
 
-  .prev-post{
+  .slider-feed .prev-post{
     position: relative;
     top: 50%;
     margin-top: -50vh;
@@ -1752,6 +1768,16 @@ border-right: 0.5px solid #3d4240;
     margin-left: 43vw;
 
  }
+
+ /*DISCOVER*/
+
+.discover-gallery{
+    margin-top: 5.2vh;
+ margin-bottom: 7.8vh;
+ width: 73vw;
+ gap: 2.13vw;
+ margin-left: 22.1vw;
+}
 
 
 }

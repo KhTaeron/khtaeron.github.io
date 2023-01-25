@@ -14,6 +14,15 @@ $('.story-une-img').on('click', function(){
 
 });
 
+$(".menu").on("click", function() {
+    $(".popup-parametre-overlay, .popup-parametre-content").addClass("opened");
+  
+  });
+
+  $(".croixparametre").on("click", function() {
+    $(".popup-parametre-overlay, .popup-parametre-content").removeClass("opened");
+  });
+
 $('.croix').on('click', closestory);
 function closestory(){
     $('.storyentiere').hide();
