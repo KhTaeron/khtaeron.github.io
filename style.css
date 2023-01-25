@@ -450,6 +450,7 @@ html, body {
 }
 
 #uxOnglet{
+    width: 66vw;
     margin-bottom: 24vh;}
 
 .popup-post-overlay{    
@@ -974,7 +975,7 @@ html, body {
 }
 
 
-@media screen and (orientation: landscape){
+@media screen and (orientation: landscape) and (min-width: 960px){
 
     /*ARCHITECTURE PAGE*/
     .forpc{
@@ -1260,6 +1261,9 @@ html, body {
      margin-bottom: 7.8vh;
        
     }
+
+    #uxOnglet{
+        width: 45vw;}
     
     .popup-post-overlay{   
         box-shadow: rgba(253, 253, 255, 0.2) 0px 7px 29px 0px;
