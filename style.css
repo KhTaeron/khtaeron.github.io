@@ -511,18 +511,20 @@ html, body {
     display: flex;
     justify-content:space-between;
     align-items: center;
+    
     height: 20px;
   }
   .bullet{
     height: 10px;
       width: 10px;
       border-radius: 50%;
-      background-color: white;
+      background-color: rgba(202, 197, 197, 0.522);
       opacity: 0.5;
   }
 
   .bullet-active{
     opacity: 1;
+    background-color: rgb(202, 197, 197);
   }
   .prev-post{
     margin-top: -50vw;
@@ -546,9 +548,6 @@ html, body {
     justify-content: center;
     align-items: center;
  }
-  .slider-content {
-    position: relative;
-    transform: translate(-50%, -50%);}
 
   .profile-icon-moyen{
     display: flex;
@@ -598,7 +597,7 @@ html, body {
 
 }
 
-.description-post a{
+.description-post a, .description-post-div-feed a{
     color: #D9E9FF;
     text-decoration: none;
 }
@@ -876,14 +875,88 @@ html, body {
     text-decoration: none;
 }
 
-.buttonpost{
-    margin-left: 15vw;
-    background-image: url('./img/testformulaire1.png');
-    background-size: cover;
-    width: 50px;
-    height: 50px;
+/*FEED*/
+
+.header-feed{
+    position: fixed;
+    z-index: 1;
     border: none;
+
+    display: flex;
+    align-items: center;
+    top: 0;
+
+        color: white;
+        font-weight: 500;
+        width: 100vw;
+        height: 5.2vh;
+        display: flex;
+        align-items: center;
+
+        background-color: black;
+
+    }
+    
+.stories-feed{
+
+    padding: 1vh 0px;
+    margin-top: 5.2vh;
+    background-color: black;
+    margin-bottom: 0;
 }
+
+.feed{
+    display: flex;
+    flex-direction: column;
+    height: 400vh;
+    width: 100vw;
+    margin-bottom: 2vh;
+
+}
+
+.description-post-div-feed{
+    margin-left: 4.8vw;
+    margin-right: 4.8vw;
+    margin-top: 1vw;
+    width: 90.4vw;
+}
+
+.header-post-feed{
+    height: 5.7vh;
+    width: 100vw;
+    border-top: solid 0.5px #3d4240;
+    display: flex;
+    align-items: center;
+  }
+
+  .post-img{
+    position: relative;
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .post-feed-testformulaire, .post-feed-ptf{
+    height: 100vw;
+    width: 100vw;
+  }
+  .post-feed-ptf{
+    margin-top: 38vh;
+  }
+
+  .post-feed-colonie{
+    margin-top: 21vh;
+  }
+
+  .post-feed-dsh{
+    margin-top: 60vh;
+  }
+
+  .post-feed-neo{
+    margin-top: 65vh;
+    margin-bottom: 2vh;
+  }
+
+
 @media screen and (orientation: landscape){
 
     /*ARCHITECTURE PAGE*/
@@ -1228,6 +1301,7 @@ overflow: hidden;
         
       }
       .bullet-contain{
+        
         margin-left: 19vw;
         margin-top: 32vh;
         width: 10vw;
@@ -1561,6 +1635,123 @@ border-right: 0.5px solid #3d4240;
     font-size: 1.75vh;
 }
 
+/*FEED*/
+
+.header-feed{
+    display: none;
+    }
+    
+.stories-feed{
+    width: 45vw;
+    padding: 0 0px;
+    margin-top: 3vh;
+    background-color: #121212;
+    margin-left: 18.5vw;
+    margin-right: auto;
+}
+
+.feed{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 82.8vw;
+    margin-bottom: 2vh;
+
+}
+
+.slider-single-image{
+    margin-bottom: 0;
+    margin-top: 5.2vh;
+    width: 45vw;
+    height: 45vw;
+}
+.description-post-div-feed{
+    margin: 1vw;
+    width: auto;
+    background-color: black;
+}
+
+
+.icones-feed button{
+    width: 2vw ;
+    height: 2vw;
+    margin-bottom: 0;
+    margin-top: 0vw;
+
+}
+
+.icone-feed .share{
+    margin-left: 1.5vw;
+}
+
+.icones-feed{
+    position: relative;
+    margin-left: -1vw;
+    margin-top: 7vh;
+    padding-top: 0vh;
+    height: auto;
+    width: auto;
+    max-width: 50vw;
+    border: none;}
+
+
+.header-post-feed{
+    height: 5.7vh;
+    width: 45vw;
+    border-top: solid 0.5px #3d4240;
+    display: flex;
+    align-items: center;
+  }
+
+  .slider-feed{
+    width: 45vw;
+    margin-top: 0vh;
+    
+  }
+  .post-img-feed{
+    position: relative;
+    width: 45vw;
+    height: auto;
+  }
+
+  .post-feed-testformulaire, .post-feed-colonie, .post-feed-dsh, .post-feed-ptf, .post-feed-neo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 45vw;
+    height: auto;
+    background-color: black;
+  }
+
+
+  .post-feed-colonie, .post-feed-dsh, .post-feed-neo,.post-feed-ptf{
+    margin-top: 3vh;
+  }
+
+
+  .bullet-feed{
+        
+    margin-left: 17.5vw;
+    margin-top: 32vh;
+  }
+
+
+  .prev-post{
+    position: relative;
+    top: 50%;
+    margin-top: -50vh;
+    width: 2.43vw;
+    height: 2.43vw;
+    
+}
+
+ .slider-feed .next-post{
+    
+    margin-left: 43vw;
+
+ }
 
 
 }

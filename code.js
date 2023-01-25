@@ -3,9 +3,7 @@ $(document).ready(function(){
 $('.gallery').hide();
 
 $('.activeonglet').css({'font-weight':'bolder',"background-color":"#25262560","border-radius":"30px"});
-
-$('.footer-info').on('click', function(){
-}); 
+ 
 $( '.onglet-info' ).on( 'click', function () {
     var oldclick = $( '.onglet' ).find( '.onglet-info.active' );
     if(oldclick.hasClass('dev')){ var src = './img/dev-icon-white.png'; oldclick.children().attr('src',src);}
@@ -310,5 +308,7 @@ $('.notif').on("click", function(){
   
 
 });
-
 };
+
+  
+
