@@ -4,6 +4,7 @@ $('.gallery').hide();
 
 $('.activeonglet').css({'font-weight':'bolder',"background-color":"#25262560","border-radius":"30px"});
  
+
 $( '.onglet-info' ).on( 'click', function () {
     var oldclick = $( '.onglet' ).find( '.onglet-info.active' );
     if(oldclick.hasClass('dev')){ var src = './img/dev-icon-white.png'; oldclick.children().attr('src',src);}
@@ -19,6 +20,7 @@ $( '.onglet-info' ).on( 'click', function () {
 
     
 });
+
 
 $('.gallery').hide();
 $('.gallery:first').show();
@@ -195,6 +197,36 @@ function quitter(){
   if($(this).is('#UGW')){   
     $('.description-post').html("Découvrez ce site web représentant le projet fictif UGW.<br> Le site a été développé avec le CMS WordPress (premier essai).<br></br>Vous souhaitez voir un peu plus de cette interface ? Suivez les liens suivants ! &#128680; Attention, ce n'est que le code source donc les plugins ne sont pas fonctionnels ! &#128680;</br></br><a href='./img/ugwtest.html'>Lien vers l'accueil</a></br><a href='./ugwtest2.html'>Lien vers une page de présentation</a>");
   };
+
+  if($(this).is('#uxcolonie')){
+    $('.description-post').html("Découvrez le design du site La Colonie des Crapules, une association de protection animale ( Loi 1901 ). &#128049; </br> Je me suis occupée de la boutique, des pages de dons et de soutien. Je me suis également occupée de l'accueil ! &#128522;</br></br> <a href='https://www.figma.com/file/7W0uJAmB2CJWGq8Qs1CGf7/Crapule?node-id=0%3A1&t=qjxeFxdFAsMk2HBF-1'> Lien vers le Figma</a>"); 
+
+  }
+
+  if($(this).is('#uxportfolio')){
+    $('.description-post').html("Décovurez le design de mon portfolio à travers ces quelques slides. Découvrez également ma démarche afin de comprendre pourquoi j'ai décidé un choix si judicieux.</br><a href='https://www.figma.com/file/SuBI7dV4kQ4WVANBTzByMO/Portfolio-insta?node-id=0%3A1&t=uqKyZ5v7EeZe0ZM3-1'>Lien vers le Figma</a>");
+  }
+
+  if($(this).is('#mascotte')){
+    $('.description-post').html("Découvrez Pumpkin, la mascotte du Rire Médecin ! &#128062; </br> Si vous souhaitez en découvrir plus, cliquez sur le lien !</br> <a href='https://prezi.com/view/AN153DA56L7haQ7Z2egl/'> Lien vers le Prezi</a>"); 
+
+  }
+
+  if($(this).is('#balloon')){
+    $('.description-post').html('<a href="https://www.youtube.com/watch?v=JdcNI0DsQgI">Lien vers le court-métrage</a> &#127880;')
+  }
+
+  if($(this).is('#picto')){
+    $('.description-post').html("Les pictogrammes sont très importants dans le domaine de la communication ! Découvrez dès maintenant les pictogrammes crées mais aussi les affiches et l'énoncé de démarche ci-dessous !</br></br><a href='https://portfolioenolatellier.000webhostapp.com/mmiicon.html'>Lien vers le rendu</a>")
+  }
+
+  if($(this).is('#foundry')){
+    $('.description-post').html("MMI Foundry est un site de fonderie numérique. &#10002; Dans le cadre d'un TP, nous devions mettre en place tout l'univers qui entoure cette marque ( fictive ). Si vous souhaitez voir les affiches et plus, suivez le lien ci-dessous !</br></br><a href='https://portfolioenolatellier.000webhostapp.com/mf.html'>Lien vers le rendu</a>")
+  }
+
+  if($(this).is('#sol')){
+    $('.description-post').html("SOL est un magazine fictif d'art, de décoration intérieure, de mobilier et culinaire. &#127774; </br> C'est un magazine bilingue ( anglais/français ) &#10002; Dans le cadre d'un TP, nous devions mettre en place tout l'univers qui entoure cette marque ( fictive ). Si vous souhaitez voir les logos, bannières et plus, suivez le lien ci-dessous !</br></br><a href='./sol.pdf' download>Lien vers les annexes</a>")
+  }
 });
 
 //removes the "active" class to .popup and .popup-content when the "Close" button is clicked 

@@ -85,7 +85,7 @@
         </div>
             </div>
         
-          <div class="icones"><button class='like'><img src="./img/heart.png"></button><button class="share"><img src="./img/share.png"></button></div>
+          <div class="icones"><button class='like'><img src="./img/heart.png"></button><button onclick="copyText()" class="share"><img src="./img/share.png"></button></div>
           <span class="compteur-like"><p class="ppc">Aucun</p></span>
           <div class="description-post-div">
           <span class="header-description-post"><b>hktaeron</b></span>
@@ -183,19 +183,17 @@
                                             <div class="post" id="UGW"><img class="post" src="./img/UGW1.png" alt="post-insta"></div>  
                                             
         </div>
-        <div class="gallery" id="uxOnglet"><div class="post"><img class="post" src="./img/uxportfolio1.png" alt="post-insta"></div>
+        <div class="gallery" id="uxOnglet"><div class="post" id='uxportfolio'><img class="post" src="./img/uxportfolio1.png" alt="post-insta"></div>
                                             <div class="post" id="uxcolonie"><img class="post" src="./img/uxcolonie1.png" alt="post-insta" alt="post-insta"></div>
                                             
         </div>
         
         
-        <div class="gallery" id="autresOnglet"><div class="post"><img class="post" src="./img/pexels-valeria-boltneva-1805164 (1).jpg" alt="post-insta"></div>
-                                            <div class="post"><img class="post" src="./img/pexels-valeria-boltneva-1805164 (1).jpg" alt="post-insta"></div>
-                                            <div class="post"><img class="post" src="./img/pexels-valeria-boltneva-1805164 (1).jpg" alt="post-insta"></div>
-                                            <div class="post"><img class="post" src="./img/pexels-valeria-boltneva-1805164 (1).jpg" alt="post-insta"></div>
-                                            <div class="post"><img class="post" src="./img/pexels-valeria-boltneva-1805164 (1).jpg" alt="post-insta"></div>
-                                            <div class="post"><img class="post" src="./img/pexels-valeria-boltneva-1805164 (1).jpg" alt="post-insta"></div>
-                                            <div class="post"><img class="post" src="./img/pexels-valeria-boltneva-1805164 (1).jpg" alt="post-insta"></div>
+        <div class="gallery" id="autresOnglet"><div class="post" id='mascotte'><img class="post" src="./img/mascotte1.png" alt="post-insta"></div>
+                                            <div class="post" id="balloon"><img class="post" src="./img/balloon1.png" alt="post-insta"></div>
+                                            <div class="post" id="picto"><img class="post" src="./img/picto1.png" alt="post-insta"></div>
+                                            <div class="post" id="foundry"><img class="post" src="./img/foundry1.png" alt="post-insta"></div>
+                                            <div class="post" id="sol"><img class="post" src="./img/sol1.png" alt="post-insta"></div>
         </div>
 
         
@@ -203,6 +201,7 @@
     </div>
     
 </div>
+<div class="block-footer">Copyright - Enola Tellier</div>
 </main>
 
 
@@ -219,6 +218,15 @@
 
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script> <!--chargement de la bibliothèque js en allant sur jquery core-->
 <script src="code.js"></script>
+<script>  function copyText() {
+      
+    /* Copy text into clipboard */
+    navigator.clipboard.writeText
+        ("https://khtaeron.github.io/index.html");
+        $('.share img').attr('src','./img/share-fill.png');
+        alert('Lien du portfolio copié ! Merci pour le partage 😉')
+
+  }</script>
 
 </body>
 </html>

@@ -632,6 +632,12 @@ html, body {
 
 }
 
+.block-footer{
+    opacity: 0;
+    height: 5.21vh;
+    width: 100vw;
+}
+
 .profile-icon-petit{
     display: flex;
     justify-content: center;
@@ -1262,6 +1268,9 @@ html, body {
        
     }
 
+    .block-footer{
+        display: none;
+    }
     #uxOnglet{
         width: 45vw;}
     

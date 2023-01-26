@@ -56,7 +56,14 @@ function closestory(){
   });
 
 
-
+  function copyText() {
+      
+    /* Copy text into clipboard */
+    navigator.clipboard.writeText
+        ("https://khtaeron.github.io/index.html");
+        $('.share').attr('src','./img/share-fill.png');
+        alert('Lien du portfolio copié ! Merci pour le partage 😉');
+  }
 
 if($('.post').hasClass('post-feed-testformulaire')){
 
