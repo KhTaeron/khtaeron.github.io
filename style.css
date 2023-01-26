@@ -126,6 +126,7 @@ html, body {
 }
 
 .popup-ajoutcomp-overlay{
+    z-index: 99;
     color: #dfd7d7;
     visibility: hidden;
   position: absolute;
